@@ -1,0 +1,8 @@
+server:
+  port: 85
+
+logging:
+  level:
+    root: info
+    # 对指定包设置日志级别
+    hdu.sth: debug
