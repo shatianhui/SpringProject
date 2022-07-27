@@ -5,9 +5,9 @@ import com.alibaba.druid.pool.DruidDataSource;
 import hdu.sth.test5.component.Bean2;
 import hdu.sth.test5.mapper.Mapper1;
 import hdu.sth.test5.mapper.Mapper2;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.mybatis.spring.SqlSessionFactoryBean;
-import org.mybatis.spring.mapper.MapperFactoryBean;
+//import org.apache.ibatis.session.SqlSessionFactory;
+//import org.mybatis.spring.SqlSessionFactoryBean;
+//import org.mybatis.spring.mapper.MapperFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -28,12 +28,12 @@ public class Config {
         return new Bean1();
     }
 
-    @Bean
-    public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) {
-        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
-        sqlSessionFactoryBean.setDataSource(dataSource);
-        return sqlSessionFactoryBean;
-    }
+//    @Bean
+//    public SqlSessionFactoryBean sqlSessionFactoryBean(DataSource dataSource) {
+//        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+//        sqlSessionFactoryBean.setDataSource(dataSource);
+//        return sqlSessionFactoryBean;
+//    }
 
     @Bean(initMethod = "init")
     public DruidDataSource dataSource() {

@@ -1,0 +1,31 @@
+package hdu.sth.test7;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.InitializingBean;
+
+import javax.annotation.PostConstruct;
+
+/**
+ * description: Bean1 <br>
+ * date: 2022/7/27 11:35 <br>
+ * author: shatianhui <br>
+ * version: 1.0 <br>
+ */
+
+
+@Slf4j
+public class Bean1 implements InitializingBean {
+    @PostConstruct
+    public void init1() {
+        log.debug("初始化1，@PostConstruct");
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        log.debug("初始化2，InitializingBean接口");
+    }
+
+    public void init3() {
+        log.debug("初始化3，@Bean的initMethod");
+    }
+}
