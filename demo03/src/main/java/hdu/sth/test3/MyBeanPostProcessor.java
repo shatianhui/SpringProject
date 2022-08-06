@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyBeanPostProcessor implements InstantiationAwareBeanPostProcessor, DestructionAwareBeanPostProcessor {
     @Override
-    // 实例化前（即调用构造方法前）执行的方法
+    // 实例化前[即调用构造方法前]执行的方法
     public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
         if (beanName.equals("lifeCycleBean"))
             log.debug("<<<<<<<<<<< 实例化前执行，如@PreDestroy");

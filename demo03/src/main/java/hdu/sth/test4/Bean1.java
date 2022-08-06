@@ -16,6 +16,7 @@ import javax.annotation.Resource;
  */
 @Slf4j
 public class Bean1 {
+
     private Bean2 bean2;
 
     @Autowired
@@ -35,13 +36,15 @@ public class Bean1 {
         this.java_home = java_home;
     }
 
-
     @Resource
     public void setBean3(Bean3 bean3) {
         log.debug("@Resource 生效：{}", bean3);
         this.bean3 = bean3;
     }
 
+    public Bean2 getBean2() {
+        return bean2;
+    }
 
     @PostConstruct
     public void init() {

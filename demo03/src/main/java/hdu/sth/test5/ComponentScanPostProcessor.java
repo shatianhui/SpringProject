@@ -54,6 +54,7 @@ public class ComponentScanPostProcessor implements BeanFactoryPostProcessor {
                         // System.out.println("是否加了@Component派生注解"+reader.getAnnotationMetadata().hasMetaAnnotation(Component.class.getName()));
                         AnnotationMetadata metadata = reader.getAnnotationMetadata();
                         String className=reader.getClassMetadata().getClassName();
+                        System.out.println(className);
                         if (metadata.hasAnnotation(name)
                                 || metadata.hasMetaAnnotation(name)){ //如果直接或者间接加了@Component注解
                             // 创建Bean的定义

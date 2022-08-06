@@ -1,6 +1,7 @@
 package hdu.sth.test6;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.context.ApplicationContext;

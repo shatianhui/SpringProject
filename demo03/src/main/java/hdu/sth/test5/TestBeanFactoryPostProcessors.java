@@ -46,17 +46,17 @@ public class TestBeanFactoryPostProcessors {
 //        });
 
         // 注册自己写的bean工厂后处理器
-        // context.registerBean(ComponentScanPostProcessor.class);
-        context.registerBean(AtBeanPostProcessor.class);
+        //context.registerBean(ComponentScanPostProcessor.class);
+        //context.registerBean(AtBeanPostProcessor.class);
 
-        context.registerBean(MapperPostProcessor.class);
+        //context.registerBean(MapperPostProcessor.class);
 
         // ⬇️初始化容器
         context.refresh();
 
-        for (String name : context.getBeanDefinitionNames()) {
-            System.out.println(name);
-        }
+//        for (String name : context.getBeanDefinitionNames()) {
+//            System.out.println(name);
+//        }
 
         // ⬇️销毁容器
         context.close();
