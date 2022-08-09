@@ -7,6 +7,7 @@ import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * description: MyConfig2 <br>
@@ -15,7 +16,8 @@ import org.springframework.context.annotation.Bean;
  * version: 1.0 <br>
  */
 @Slf4j
-public class MyConfig2 implements ApplicationContextAware, InitializingBean {
+@Configuration
+public class MyConfig2 implements ApplicationContextAware, InitializingBean { //通过内置方式实现初始化和注入ApplicationContext容器
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) {
         log.debug("注入 ApplicationContext");

@@ -8,11 +8,12 @@ spring:
   main:
     banner-mode: off   #关闭SpringBoot的启动图标
 
-logging:
-  level:
-    root: info
-    # 对指定包设置日志级别
-    hdu.sth: debug
+#logging:
+#  level:
+#    root: info
+#    # 对指定包设置日志级别
+#    hdu.sth: info
+
 server:
   servlet:
     session:

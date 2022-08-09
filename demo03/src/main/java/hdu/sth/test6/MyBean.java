@@ -22,22 +22,18 @@ public class MyBean implements BeanNameAware , ApplicationContextAware, Initiali
     public void setBeanName(String name) {
         log.debug("当前bean：" + this + "，实现 BeanNameAware 调用的方法，名字叫：" + name);
     }
-
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         log.debug("当前bean：" + this + "，实现 ApplicationContextAware 调用的方法，容器叫：" + applicationContext);
     }
-
     @Override
     public void afterPropertiesSet() throws Exception {
         log.debug("当前bean：" + this + "，实现 InitializingBean 调用的方法，初始化");
     }
-
     @Autowired
     public void aaa(ApplicationContext applicationContext) {
         log.debug("当前bean：" + this +"，使用 @Autowired 容器是：" + applicationContext);
     }
-
     @PostConstruct
     public void init() {
         log.debug("当前bean：" + this + "，使用 @PostConstruct 初始化");

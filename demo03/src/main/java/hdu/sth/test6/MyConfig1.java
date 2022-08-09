@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import javax.annotation.PostConstruct;
 
@@ -15,7 +16,8 @@ import javax.annotation.PostConstruct;
  * version: 1.0 <br>
  */
 @Slf4j
-public class MyConfig1 {
+@Configuration
+public class MyConfig1 {  // 通过注解方式注入ApplicationContext容器及初始化功能
 
     @Autowired
     public void setApplicationContext(ApplicationContext applicationContext) {
