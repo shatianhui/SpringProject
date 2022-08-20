@@ -75,7 +75,7 @@ public class TestBeanProcessor {
         Field bean3Field = Bean1.class.getDeclaredField("bean3");
         bean3Field.setAccessible(true);
         // 将这个属性封装成一个DependencyDescriptor对象
-        DependencyDescriptor dd1 = new DependencyDescriptor(bean3Field, false);// false表示找不到不会报错，就是null
+        DependencyDescriptor dd1 = new DependencyDescriptor(bean3Field, false);// 第二个参数表示是否必须，true表示必须，没有则报错，false表示找不到不会报错，就是null
         // 再执行beanFactory的doResolveDependency
         Bean3 bean3Value = (Bean3) beanFactory.doResolveDependency(dd1, null, null, null);
         System.out.println(bean3Value);

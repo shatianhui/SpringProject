@@ -31,7 +31,7 @@ public class A17 {
         context.registerBean("aspect1",Aspect1.class);
         context.registerBean(ConfigurationClassPostProcessor.class);//加入bean后处理器，解析@Bean注解
 
-        context.registerBean(AnnotationAwareAspectJAutoProxyCreator.class);
+        context.registerBean(AnnotationAwareAspectJAutoProxyCreator.class); //两个作用
 
         context.refresh();
 //        for (String name : context.getBeanDefinitionNames()) {

@@ -101,6 +101,13 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
+        <!-- 第44讲:@Indexed原理 -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework</groupId>-->
+<!--            <artifactId>spring-context-indexer</artifactId>-->
+<!--            <optional>true</optional>-->
+<!--        </dependency>-->
+
     </dependencies>
 
     <build>

@@ -11,6 +11,5 @@ import org.springframework.boot.web.servlet.context.AnnotationConfigServletWebSe
 public class A33_1 {
     public static void main(String[] args) {
         AnnotationConfigServletWebServerApplicationContext context=new AnnotationConfigServletWebServerApplicationContext(WebConfig_1.class);
-
     }
 }

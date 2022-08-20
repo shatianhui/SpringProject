@@ -1,0 +1,13 @@
+hdu.sth.test41.A41$MyImportSelector=\
+  hdu.sth.test41.A41.AutoConfiguration1,\
+  hdu.sth.test41.A41.AutoConfiguration2
+
+hdu.sth.test41.A41_2$MyImportSelector=\
+  hdu.sth.test41.A41_2.AutoConfiguration1,\
+  hdu.sth.test41.A41_2.AutoConfiguration2
+
+
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  hdu.sth.test41.A41_2.AutoConfiguration1,\
+  hdu.sth.test41.A41_2.AutoConfiguration2
